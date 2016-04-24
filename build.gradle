@@ -1,0 +1,23 @@
+group 'com.moblima'
+version '0.1.1'
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.7
+mainClassName = "com.moblima.main.Main"
+
+repositories {
+    maven  {
+        url "http://repo1.maven.org/maven2"
+    }
+}
+
+dependencies {
+    testCompile'junit:junit:4.11'
+}
+
+run{
+    standardInput = System.in
+}
